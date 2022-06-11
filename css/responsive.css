@@ -132,29 +132,15 @@
         transition: 0.5s ease transform;
     }
 
+    #form {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;       
+    }
+
+    textarea {
+        width: 80%;
+    }
+
 }   
-   
-   
- /*   section#form {
-        margin-top: 300px;
-        margin-left: 0;
-        align-content: center;
-        text-align: center;
-    }
-
-    section#form .h2_1 {
-        margin-left: 0;
-        font-size: 30px;
-    }
-
-    section#form .h2_2 {
-        font-size: 16px;
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-
-    section#form #texto {
-        width: 400px;
-        height: 200px;
-    }
-*/
