@@ -191,3 +191,21 @@ a {
     margin: 100px auto;
     max-width: 980px;
 }
+
+/*Contato*/
+#form {
+    margin: 10% 0 30%;
+    align-content: center;
+    text-align: center;
+    display: grid;
+}
+
+
+#form .h2_2 {
+    margin-bottom: 5%;
+}
+/*
+#form #texto {
+    width: 400px;
+    height: 200px;
+}
