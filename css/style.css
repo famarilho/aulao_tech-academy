@@ -8,7 +8,6 @@
 
 html,
 body {
-    height: 100vh;
     font-family: "Source Sans Pro", 'Times New Roman';
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -47,7 +46,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: rgba(7, 39, 7, 0.8);
+    background: rgb(13, 82, 13);
+    color: white;
 }
 
 header .container img{
@@ -100,11 +100,17 @@ form input {
 
 form [type="submit"] {
     background-color: #05412a;
-    color: white
+    color: white;
+    width: 150px;
+    padding-left: 0px;
+    font-size: 16px;
+    height: 40px;
 }
 
 form [type="submit"]:hover {
     cursor: pointer;
+    background-color: rgb(13, 82, 13);
+    transform: translateY(-2px);
 }
 
 main .container-main img{
@@ -112,6 +118,11 @@ main .container-main img{
 }
 
 /*CARDS*/
+
+a {
+    text-decoration: none;
+}
+
 .cards {
     width: 90%;
     max-width: 980px;
@@ -134,6 +145,7 @@ main .container-main img{
     cursor: pointer;
     box-shadow: 5px 5px 15px -4px #000000;
     transition: all 0.3s ease 0s;
+    border-radius: 10px;
 }
 
 .card:hover {
@@ -149,6 +161,8 @@ main .container-main img{
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius: 10px 10px 0 0;
+    height: 225px;
 }
 
 .image img {
@@ -167,22 +181,13 @@ main .container-main img{
     margin-bottom: 0px;
 }
 
-section#form .h2_1 {
-    font-size: 40px;
-}
-
-section#form .h2_2 {
-    font-size: 26px;
-    color:#5f5d5d;
-}
-
-section#form  {
+.desafio {
     font-size: 100px;
-    display: grid;
+    display: flex;
     justify-content: center;
-    height: 200px;
+    height:400px;
     align-items: center;
-    margin-top: 200px;
-    margin-left: 180px;
+    border: 1px solid black;
+    margin: 100px auto;
     max-width: 980px;
 }
