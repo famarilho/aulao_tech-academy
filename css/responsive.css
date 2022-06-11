@@ -2,15 +2,19 @@
     main .container-main div {
         margin: auto;
     }
+
     main .container-main img {
         display: none;
     }
+
     h2 {
         margin-left: 50px;
     }
+
     div h3 {
         margin-left: 50px;
     }
+
     form {
         display: flex;
         align-items: center;
@@ -19,12 +23,12 @@
         text-align: center;
         flex-direction: column;
     }
+
     input {
         margin: 12px;
 
     }
 }
-
 
 @media(max-width: 1000px) {
     .container {
@@ -33,30 +37,57 @@
 }
 
 @media(max-width: 630px) {
-    nav {
-     display: none;   
+
+    .menu-button-container {
+        display: flex;
     }
+
+    .menu {
+        position: absolute;
+        margin-top: 30px;
+        flex-direction: column;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        left: 100%;
+        transform: translateX(100vw);
+        transition: 0.5s ease transform;
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border-top: 1px solid rgb(7, 39, 7);
+    }
+
+    /*.menu>li:not(:last-child) {
+        border-bottom: 1px solid rgb(7, 39, 7);
+    }*/
+
+    .menu li a {
+        flex: 1;
+        text-align: center;
+    }
+
     main .container-menu img {
         display: none;
-    } 
-    .container-menu {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
-    #checkbox-menu {
-        position:absolute;
-        opacity: 0;
-    }
-    label{
+
+    label {
         cursor: pointer;
         position: relative;
         display: block;
         height: 22px;
         width: 30px;
     }
-    label span{
+
+    label span {
         position: absolute;
         display: block;
         height: 5px;
@@ -65,43 +96,65 @@
         border-radius: 30px;
         transition: 0.25s ease-in-out;
     }
-    label span:nth-child(1){
+
+    label span:nth-child(1) {
         top: 0;
     }
-    label span:nth-child(2){
+
+    label span:nth-child(2) {
         top: 8px;
     }
-    label span:nth-child(3){
+
+    label span:nth-child(3) {
         top: 16px;
     }
-    #checkbox-menu:checked + label span:nth-child(1){
+
+    #checkbox-menu:checked+label span:nth-child(1) {
         transform: rotate(-45deg);
-        top:8px;
+        top: 8px;
     }
-    #checkbox-menu:checked + label span:nth-child(2){
+
+    #checkbox-menu:checked+label span:nth-child(2) {
         opacity: 0;
     }
-    #checkbox-menu:checked + label span:nth-child(3){
+
+    #checkbox-menu:checked+label span:nth-child(3) {
         transform: rotate(45deg);
-        top:8px;
+        top: 8px;
     }
-    section#form {
+
+    nav.menu {
+        width: 100%;
+    }
+
+    #checkbox-menu:checked~nav .menu {
+        transform: translateX(-100vw);
+        transition: 0.5s ease transform;
+    }
+
+}   
+   
+   
+ /*   section#form {
         margin-top: 300px;
         margin-left: 0;
         align-content: center;
         text-align: center;
     }
+
     section#form .h2_1 {
         margin-left: 0;
         font-size: 30px;
     }
+
     section#form .h2_2 {
         font-size: 16px;
         margin-left: 0;
         margin-bottom: 0;
     }
+
     section#form #texto {
         width: 400px;
         height: 200px;
     }
-}
+*/
