@@ -25,14 +25,14 @@
                     </label>
                     <nav>
                         <ul class="menu">
-                           <li>
-                                <a href="#">Home</a>
+                            <li>
+                                <a href="#home">Home</a>
                             </li>
                             <li>
-                                <a href="#">Artigos</a>
+                                <a href="#artigos">Artigos</a>
                             </li>
                             <li>
-                                <a href="#">Contato</a>
+                                <a href="#form">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -40,14 +40,13 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="home">
         <div class="container-main">
             <div>
                 <h2><span>Inscreva-se agora</span></h2>
                 <h2>na Newsletter</h2>
                 <h3>
-                    Provocando novos começos com um conhecimento
-                    transformador na velocidade do AGORA!
+                    Ciência aplicada ao campo.
                 </h3>
                 <form>
                     <input type="text" placeholder="Nome" />
@@ -58,53 +57,73 @@
             <img src="./images/image.jpg" alt="sheep_in_grazing">
         </div>
     </main>
-    <section class="cards">
-        <div class="card">
-            <div class="image">
-                <img src="./images/bye.jpg" alt="loading-sheeps" />
-            </div>
+    <section id="artigos" class="cards">
+        <a href="https://www.youtube.com/watch?v=0JkpN7jO5Nw">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/bye.jpg" alt="loading-sheeps" />
+                </div>
 
-            <div class="content">
-                <p class="title text-medium">
-                    Com startups mais "baratas", grandes empresas buscam aquisições.
-                </p>
-                <div class="info">
-                    <p class="text-medium">57 Min</p>
+                <div class="content">
+                    <p class="title text-medium">
+                        Plataforma de fenotipado intensivo UELM.
+                    </p>
+                    <div class="info">
+                        <p class="text-medium">57 Min</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="image">
-                <img src="./images/summ.jpg" alt="loading-sheeps" />
-            </div>
+        </a>
+        <a href="./artigos/futuro.html">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/summ.jpg" alt="loading-sheeps" />
+                </div>
 
-            <div class="content">
-                <p class="title text-medium">
-                    Com startups mais "baratas", grandes empresas buscam aquisições.
-                </p>
-                <div class="info">
-                    <p class="text-medium">57 Min</p>
+                <div class="content">
+                    <p class="title text-medium">
+                        Redução do tempo para estimativa do consumo alimentar residual e predição do consumo alimentar
+                        em ovinos.
+                    </p>
+                    <div class="info">
+                        <p class="text-medium">57 Min</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
 
-        <div class="card">
-            <div class="image">
-                <img src="./images/ewe.jpg" alt="lamb-ewe" />
-            </div>
-            <div class="content">
-                <p class="title text-medium">
-                    Com startups mais "baratas", grandes empresas buscam aquisições.
-                </p>
-                <div class="info">
-                    <p class="text-medium">57 Min</p>
+        <a href="./artigos/futuro_b.html">
+            <div class="card">
+                <div class="image">
+                    <img src="./images/ewe.jpg" alt="lamb-ewe" />
+                </div>
+                <div class="content">
+                    <p class="title text-medium">
+                        Reduction of time to estimate residual feed intake and prediction of feed intake in sheep.
+                    </p>
+                    <div class="info">
+                        <p class="text-medium">57 Min</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     </section>
     <section id="form">
-        <div class="desafio">Desafio</div>
+        <div>
+            <h2 class="h2_1">Nos conte sobre suas demandas.</h2>
+            <h2 class="h2_2">Entre em contato!</h2>
+        </div>
+        <form class="form" action="#" method="get">
+            <input type="text" placeholder="Nome" id="id_nome" name="nome" />
+            <input type="email" placeholder="E-mail" id="id_email" name="email" />
+            <input type="tel" placeholder="Telefone: (XX) 9 XXXXXXXX" id="id_tel" name="tel" />
+            <textarea id="texto" name="texto" placeholder="Escreva sua mensagem" rows="10" cols="100"></textarea> <br>
+            <input type="submit" value="Enviar" id="id_enviar" name="enviar" />
+        </form>
     </section>
+    <!-- <section id="form">
+        <div class="desafio">Desafio</div>
+    </section>-->
 </body>
 
 </html>
