@@ -133,10 +133,24 @@
     }
 
     #form {
+     
         position: absolute;
         display: block;
         height: 5px;
-        width: 100%;       
+        width: 100%; 
+    }
+
+    .h2_1, .h2_2 {
+        text-align: center;
+        margin: 0% 0% 0% 1%;
+    }
+
+    .h2_1 {
+        font-size: 28px;
+    }
+
+    .h2_2 {
+        font-size: 24px;
     }
 
     textarea {
